@@ -1,0 +1,51 @@
+<div class="card">
+    <div class="card-header" style="border: none;background: white;">
+      <div class="text-muted text-center mt-2 mb-3">
+        <small>Sign in with</small>
+  
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="text-center text-muted mb-4">
+        <div style="height: 15px;">
+      
+        </div>
+      </div>
+      <div class="text-center text-muted mb-4">
+  
+      </div>
+      <form role="form">
+  
+        <div class="form-group mb-3 text-center">
+         
+          <div class="input-group input-group-alternative">
+            <div class="input-group-prepend">
+              <span class="input-group-text">
+               
+              </span>
+            </div>
+            <input [(ngModel)]="loginModel.userName" class="form-control" placeholder="userName" name="userName" type="userName" />
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="input-group input-group-alternative">
+            <div class="input-group-prepend">
+              <span class="input-group-text">
+               
+
+              </span>
+            </div>
+            <input [(ngModel)]="loginModel.password" class="form-control" placeholder="Password" name="password"
+              type="password" />
+          </div>
+        </div>
+        <br>
+  
+        <div class="text-center">
+          <button (click)="onLogin()" type="button" class="btn btn-primary my-4">
+            Sign in
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>

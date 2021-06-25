@@ -1,0 +1,45 @@
+<div class="form-froup row">
+
+
+    <label class="col-sm-2 col-form-label">Employee Name</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" [(ngModel)]="userName"
+        placeholder="Enter Employee Name">
+    </div>
+
+
+    <label class="col-sm-2 col-form-label">Employee Email</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" [(ngModel)]="userEmail"
+        placeholder="Enter Employee Email">
+    </div>
+
+
+   
+
+
+    <label class="col-sm-2 col-form-label">Employee Password</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" [(ngModel)]="userPassword"
+        placeholder="Enter Employee Password">
+    </div>
+
+    <label class="col-sm-2 col-form-label">Employee Role</label>
+    <div class="col-sm-10" >
+        <select class="form-control" [(ngModel)]="userRole">
+            <option>--Select--</option>
+            <option >Admin</option>
+            <option >Employee</option>
+        </select>
+     </div>
+
+
+</div>
+
+<button (click)="addUser()" *ngIf="use.userId==0" class="btn btn-primary">
+    Add
+</button>
+
+<button (click)="updateUser()" *ngIf="use.userId!=0" class="btn btn-primary">
+    Update
+</button>
