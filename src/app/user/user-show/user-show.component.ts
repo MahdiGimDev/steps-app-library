@@ -47,7 +47,7 @@ this.ActivateAddEditUserComp=true;
   
   deleteClick(item){
     if(confirm('Are you sure??')){
-      this.service.deleteUser(item.AuthorId).subscribe(data=>{
+      this.service.deleteUser(item.userId).subscribe(data=>{
         alert(data.toString());
         this.refreshUserList();
       })
